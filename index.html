@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+        <div class="stars"></div>
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo">
+            Portfolio
+        </a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-btn">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome to My <span class="highlight">Portfolio</span></h1>
+            <p>I am a passionate beginner web developer learning HTML and CSS to build clean, modern, and responsive websites.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate learner who is building skills in web development. I enjoy creating simple, modern and responsive web pages using HTML and CSS. I want to become a professional web developer.</p>
+                <ul class="about-list">
+                    <li><i class='bx bx-check'></i> Computer Science Student</li>
+                    <li><i class='bx bx-check'></i> Web Development is Passion</li>
+                    <li><i class='bx bx-check'></i> Learning Web Technologies</li>
+                </ul>
+            </div>
+            <div class="about-img">
+                <img src="developer_illustration.png" alt="Profile Image" id="dev-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section-title center">
+            <h2>My Skills</h2>
+        </div>
+        
+        <ul class="skills-grid">
+            <li class="skill-card hover-target">
+                <div class="skill-icon"><i class='bx bxl-html5'></i></div>
+                <h3>HTML5</h3>
+            </li>
+            <li class="skill-card hover-target">
+                <div class="skill-icon"><i class='bx bxl-css3'></i></div>
+                <h3>CSS3</h3>
+            </li>
+            <li class="skill-card hover-target">
+                <div class="skill-icon"><i class='bx bxl-javascript'></i></div>
+                <h3>JavaScript</h3>
+            </li>
+            <li class="skill-card hover-target">
+                <div class="skill-icon"><i class='bx bxl-github'></i></div>
+                <h3>Git & GitHub</h3>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-title center">
+            <h2>Contact Me</h2>
+        </div>
+        
+        <div class="contact-info">
+            <p>Email: tjaveed507@gmail.com</p>
+            <p>Phone: +92-312-2190407</p>
+        </div>
+
+        <div class="contact-container">
+            <form action="#" class="contact-form">
+                <div class="input-box">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-box">
+                    <label>Your Email</label>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-box">
+                    <label>Your Message</label>
+                    <textarea cols="30" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navbar = document.querySelector('.navbar');
+
+        menuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
